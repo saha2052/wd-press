@@ -5,10 +5,10 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: my_password_1234789
-      MYSQL_DATABASE: my_wp_database
-      MYSQL_USER: my_wp_user
-      MYSQL_PASSWORD: my_wp_user_password
+      MYSQL_ROOT_PASSWORD: 8XX(9pS@a1
+      MYSQL_DATABASE: thefirst_wp981
+      MYSQL_USER: thefirst_wp981
+      MYSQL_PASSWORD: 8XX(9pS@a1
     volumes:
       - mysql:/var/lib/mysql
   phpmyadmin:
@@ -20,7 +20,7 @@ services:
       - '8080:80'
     environment:
       PMA_HOST: my_database
-      MYSQL_ROOT_PASSWORD: my_password_1234789
+      MYSQL_ROOT_PASSWORD: 8XX(9pS@a1
 
   #WordPress image based on Apache
   wordpress:
@@ -32,9 +32,9 @@ services:
       - "8000:80"
     environment:
       WORDPRESS_DB_HOST: my_database:3306
-      WORDPRESS_DB_USER: my_wp_user
-      WORDPRESS_DB_PASSWORD: my_wp_user_password
-      WORDPRESS_DB_NAME: my_wp_database
+      WORDPRESS_DB_USER: thefirst_wp981
+      WORDPRESS_DB_PASSWORD: 8XX(9pS@a1
+      WORDPRESS_DB_NAME: thefirst_wp981
     volumes:
       ["./:/var/www/html"]
 volumes:
