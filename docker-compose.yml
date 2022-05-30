@@ -29,7 +29,7 @@ services:
     image: wordpress:latest
     restart: always
     ports:
-      - "8000:80"
+      - "80:80"
     environment:
       WORDPRESS_DB_HOST: my_database:3306
       WORDPRESS_DB_USER: thefirst_wp981
